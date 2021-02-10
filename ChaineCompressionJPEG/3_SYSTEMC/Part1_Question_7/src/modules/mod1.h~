@@ -1,0 +1,20 @@
+#include "systemc.h"
+
+SC_MODULE(Mod1)
+{
+private:
+	int t[3];
+
+public:
+    sc_fifo_in <unsigned char> e;
+    // sc_fifo_out<unsigned char> s;
+    sc_in < bool > outmod1;
+
+	SC_CTOR(Mod1)
+	{
+		SC_THREAD(mod1);
+		//sensitive << e;
+	}
+
+    void mod1();
+ };

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1602258487">
+  <File Type="PA-TCL" Name="ADD_WRAPPER.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ADD_WRAPPER_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ADD_WRAPPER_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ADD_WRAPPER_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="ADD_WRAPPER_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ADD_WRAPPER_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ADD_WRAPPER.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ADD_WRAPPER_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="ADD_WRAPPER_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ADD_WRAPPER_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ADD_WRAPPER_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ADD_WRAPPER_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ADD_WRAPPER_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ADD_WRAPPER_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ADD_WRAPPER_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ADD_WRAPPER_physopt.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ADD_WRAPPER_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ADD_WRAPPER_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ADD_WRAPPER_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ADD_WRAPPER_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ADD_WRAPPER_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="ADD_WRAPPER.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="ADD_WRAPPER_route_status.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ADD_WRAPPER_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIN" Name="ADD_WRAPPER.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ADD_WRAPPER_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="ADD_WRAPPER.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="ADD_WRAPPER_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="ADD_WRAPPER.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ADD_WRAPPER_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="ADD_WRAPPER.nky"/>
+  <File Type="BITSTR-BMM" Name="ADD_WRAPPER_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="ADD_WRAPPER_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="ADD_WRAPPER.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ADD_WRAPPER_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="ADD_WRAPPER.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ADD_WRAPPER_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="ADD_WRAPPER.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="ADD_WRAPPER.sysdef"/>
+  <File Type="BITSTR-LTX" Name="ADD_WRAPPER.ltx"/>
+  <File Type="RDI-RDI" Name="ADD_WRAPPER.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ADD_WRAPPER_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ADD_WRAPPER_postroute_physopt.dcp"/>
+  <File Type="ROUTE-STATUS" Name="ADD_WRAPPER_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ADD_WRAPPER_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="ADD_WRAPPER_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ADD_WRAPPER_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ADD_WRAPPER_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ADD_WRAPPER_drc_routed.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../1_ADD_SIGNED/src/ADD_SIGNED.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_ADD_SIGNED/src/ADD_WRAPPER.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ADD_WRAPPER"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

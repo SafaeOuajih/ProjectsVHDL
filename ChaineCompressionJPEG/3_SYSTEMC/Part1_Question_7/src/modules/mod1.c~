@@ -1,0 +1,28 @@
+/*
+ *  Adder.h
+ *  SystemC_SimpleAdder
+ *
+ *  Created by Le Gal on 07/05/07.
+ *  Copyright 2007 __MyCompanyName__. All rights reserved.
+ *
+ */
+#include "mod1.h"
+
+void Mod1::mod1(){
+	int d[3];
+	while( true ){
+		d[0] = (int)e.read();
+		d[1] = (int)e.read();
+		d[2] = (int)e.read();
+
+		if(clk.read() == 1) {
+		  
+		   out0.write(t[0]);
+		   out1.write(t[1]);
+		   out2.write(t[2]);
+
+		}
+
+	}
+}
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Q1/my_module.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Q1/tb_modules/Generator.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.1.cpp:1:
+In file included from Q1/tb_modules/Generator.cpp:1:
+Q1/tb_modules/Generator.cpp:9:13: error: use of undeclared identifier &apos;SC_NS&apos;
+  wait( 20, SC_NS );
+            ^
+1 error generated.\n"/>
+</Messages>

@@ -1,0 +1,34 @@
+INFO: [HLS 200-10] Running '/opt/xilinx/vivado/2018.2/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'souajih' on host 'malte.pedago.ipb.fr' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Nov 13 17:35:13 CET 2020
+INFO: [HLS 200-10] On os "CentOS Linux release 7.8.2003 (Core)"
+INFO: [HLS 200-10] In directory '/net/e/souajih/Documents/blegal/EN325/6_HLS'
+INFO: [HLS 200-10] Opening project '/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se'.
+INFO: [HLS 200-10] Adding design file 'Q1/tb_modules/Analyzer.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Q1/tb_modules/Analyzer.h' to the project
+INFO: [HLS 200-10] Adding design file 'Q1/tb_modules/Generator.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Q1/tb_modules/Generator.h' to the project
+INFO: [HLS 200-10] Adding design file 'Q1/my_module.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Q1/my_module.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'Q1/top_module.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a100tcsg324-1'
+INFO: [HLS 200-10] Analyzing design file 'Q1/my_module.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Q1/tb_modules/Generator.cpp' ... 
+WARNING: [HLS 200-40] In file included from /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.1.cpp:1:
+In file included from Q1/tb_modules/Generator.cpp:1:
+Q1/tb_modules/Generator.cpp:9:13: error: use of undeclared identifier 'SC_NS'
+  wait( 20, SC_NS );
+            ^
+1 error generated.\n
+Compilation of the preprocessed source 'Generator' failed
+    while executing
+"source /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/csynth.tcl"
+    invoked from within
+"hls::main /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

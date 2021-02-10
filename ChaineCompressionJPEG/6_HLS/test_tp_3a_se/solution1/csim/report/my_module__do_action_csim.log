@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../Q1/top_module.cpp in debug mode
+   Compiling ../../../../Q1/my_module.cpp in debug mode
+   Generating csim.exe
+
+Info: (I804) /IEEE_Std_1666/deprecated: all waits except wait() and wait(N)
+             are deprecated for SC_CTHREAD, use an SC_THREAD instead
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

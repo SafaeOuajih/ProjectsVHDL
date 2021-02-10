@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="my_module.h" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/my_module.h"/>
+    <originFiles name="my_module.cpp" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/my_module.cpp"/>
+    <originFiles name="Analyzer.cpp" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/tb_modules/Analyzer.cpp"/>
+    <originFiles name="Analyzer.h" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/tb_modules/Analyzer.h"/>
+    <originFiles name="Generator.cpp" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/tb_modules/Generator.cpp"/>
+    <originFiles name="Generator.h" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/tb_modules/Generator.h"/>
+  </source>
+  <testbench>
+    <originFiles name="top_module.cpp" path="/net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/top_module.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

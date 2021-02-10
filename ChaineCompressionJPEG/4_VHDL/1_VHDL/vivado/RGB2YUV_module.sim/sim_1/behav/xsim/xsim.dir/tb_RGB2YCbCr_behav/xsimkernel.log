@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_RGB2YCbCr_behav/xsimk -simmode gui -wdb tb_RGB2YCbCr_behav.wdb -simrunnum 0 -socket 57490
+Design successfully loaded
+Design Loading Memory Usage: 42344 KB (Peak: 42344 KB)
+Design Loading CPU Usage: 20 ms

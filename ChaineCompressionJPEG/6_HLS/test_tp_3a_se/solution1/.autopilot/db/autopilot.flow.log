@@ -1,0 +1,252 @@
+INFO-FLOW: Workspace /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1 opened at Fri Nov 13 17:35:13 CET 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Execute     source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7a100tcsg324-1 
+Execute       add_library xilinx/artix7/artix7:xc7a100t:csg324:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7a100t 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/artix7/artix7_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7a100tcsg324-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.2 sec.
+Execute   set_part xc7a100tcsg324-1 
+Execute     add_library xilinx/artix7/artix7:xc7a100t:csg324:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7a100t 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/artix7/artix7_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Execute       source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute         source /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'Q1/my_module.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling Q1/my_module.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted Q1/my_module.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "Q1/my_module.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp" 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E Q1/my_module.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp
+Command       clang done; 1.36 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp"  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.7 sec.
+INFO-FLOW: GCC PP time: 3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp std=gnu++98 -directive=/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.75 sec.
+INFO-FLOW: CDT Preprocessing without tidy-3.1...
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp.ap-line.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp.ap-line.cpp.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+Execute       cdt  "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp.ap-line.cpp"  -m "my_module" -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp.ap-cdt.cpp" --pp --directive /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/solution1.directive --source /net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/my_module.cpp --error /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db --ca --es --gf --pd --p2d /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db --sd --scff /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/.systemc_flag --ad 
+INFO-FLOW: Error:Syntax error in source:for (__decltype(__n + 0) __niter = __n;
+Error:Missing ; in source:t
+Error:Syntax error in source:)
+ *__first = __value;
+Error:Syntax error in source:for (__decltype(__n + 0) __niter = __n;
+Error:Missing ; in source:t
+Error:Syntax error in source:)
+ *__first = __tmp;
+Command       cdt done; 5.77 sec.
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.0.cpp.ap-cdt.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.0.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.0.cpp.ap-line.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute       source /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/pragma.status.tcl 
+INFO-FLOW: Pragma Handling...
+INFO-FLOW: SystemC Checker
+Execute       ap_eval exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang++ -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -DAP_PRE  -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/systemc/include" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/include" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/include/ap_sysc" -S "Q1/my_module.cpp" -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pp.00.o 
+Command       ap_eval done; 1.53 sec.
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.1.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.scpp.0.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.scpp.0.cpp.line_pre.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: SystemC preprocessor
+Execute       ap_eval exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/tps/lnx64/jre/bin/java -Xmx512m -classpath "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/org.eclipse.cdt.core_5.0.0.200806171202.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/jargs.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/org.eclipse.core.runtime_3.4.0.v20080512.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/autopilot.scelaborator.jar"  autopilot.scelaborator.ScParser  -S "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" --force-inline  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/" "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.scpp.0.cpp" --mi-suffix=0 -d -t 
+Command       ap_eval done; error code: 1; 26.37 sec.
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.scpp.0.cpp.ssdm.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.scpp.1.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.scpp.1.cpp.line_post.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.2.cpp" 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.2.cpp
+Command       clang done; 1.38 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.bc" 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/my_module.bc
+Command       clang done; 1.76 sec.
+INFO: [HLS 200-10] Analyzing design file 'Q1/tb_modules/Generator.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling Q1/tb_modules/Generator.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted Q1/tb_modules/Generator.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "Q1/tb_modules/Generator.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp" 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E Q1/tb_modules/Generator.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp
+Command       clang done; 1.37 sec.
+INFO-FLOW: GCC PP time: 1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp std=gnu++98 -directive=/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.44 sec.
+INFO-FLOW: CDT Preprocessing without tidy-3.1...
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp.ap-line.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp.ap-line.cpp.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+Execute       cdt  "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp.ap-line.cpp"  -m "my_module" -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp.ap-cdt.cpp" --pp --directive /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/solution1.directive --source /net/e/souajih/Documents/blegal/EN325/6_HLS/Q1/tb_modules/Generator.cpp --error /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db --ca --es --gf --pd --p2d /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db --sd --scff /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/.systemc_flag --ad 
+INFO-FLOW: Error:Syntax error in source:for (__decltype(__n + 0) __niter = __n;
+Error:Missing ; in source:t
+Error:Syntax error in source:)
+ *__first = __value;
+Error:Syntax error in source:for (__decltype(__n + 0) __niter = __n;
+Error:Missing ; in source:t
+Error:Syntax error in source:)
+ *__first = __tmp;
+Command       cdt done; 5.95 sec.
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.0.cpp.ap-cdt.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.0.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.0.cpp.ap-line.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute       source /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/pragma.status.tcl 
+INFO-FLOW: Pragma Handling...
+INFO-FLOW: SystemC Checker
+Execute       ap_eval exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang++ -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -DAP_PRE  -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/systemc/include" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/include" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/include/ap_sysc" -S "Q1/tb_modules/Generator.cpp" -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pp.00.o 
+Command       ap_eval done; 1.5 sec.
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.1.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.scpp.0.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.scpp.0.cpp.line_pre.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: SystemC preprocessor
+Execute       ap_eval exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/tps/lnx64/jre/bin/java -Xmx512m -classpath "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/org.eclipse.cdt.core_5.0.0.200806171202.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/jargs.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/org.eclipse.core.runtime_3.4.0.v20080512.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar:/opt/xilinx/vivado/2018.2/Vivado/2018.2/lib/classes/autopilot.scelaborator.jar"  autopilot.scelaborator.ScParser  -S "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" --force-inline  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/" "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.scpp.0.cpp" --mi-suffix=1 -d -t 
+Command       ap_eval done; error code: 1; 25.18 sec.
+INFO-FLOW: Marker-Pragma convertor: /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.scpp.0.cpp.ssdm.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.scpp.1.cpp /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.scpp.1.cpp.line_post.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.2.cpp" 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.2.cpp
+Command       clang done; 1.34 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.bc" 
+INFO-FLOW: exec /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/vivado/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot -I /opt/xilinx/vivado/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.bc
+WARNING: [HLS 200-40] In file included from /net/e/souajih/Documents/blegal/EN325/6_HLS/test_tp_3a_se/solution1/.autopilot/db/Generator.pragma.1.cpp:1:
+In file included from Q1/tb_modules/Generator.cpp:1:
+Q1/tb_modules/Generator.cpp:9:13: error: use of undeclared identifier 'SC_NS'
+  wait( 20, SC_NS );
+            ^
+1 error generated.\n
+Command       clang done; error code: 2; 1.78 sec.
+Command     elaborate done; error code: 2; 83.94 sec.
+Command   csynth_design done; error code: 2; 83.95 sec.
+Command ap_source done; error code: 1; 84.23 sec.
+Execute cleanup_all 

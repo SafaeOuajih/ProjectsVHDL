@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 13 09:48:17 2020
+# Process ID: 14171
+# Current directory: /net/e/souajih/Documents/blegal/EN325/2_PART_VHDL/muls_project2/muls_project2.runs/impl_2
+# Command line: vivado -log MULS_WRAPPER.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MULS_WRAPPER.tcl -notrace
+# Log file: /net/e/souajih/Documents/blegal/EN325/2_PART_VHDL/muls_project2/muls_project2.runs/impl_2/MULS_WRAPPER.vdi
+# Journal file: /net/e/souajih/Documents/blegal/EN325/2_PART_VHDL/muls_project2/muls_project2.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source MULS_WRAPPER.tcl -notrace

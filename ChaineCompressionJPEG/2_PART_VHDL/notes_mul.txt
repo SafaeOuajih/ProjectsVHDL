@@ -1,0 +1,24 @@
+temps critique = 5.921s
+lut = 0
+n=16
+dsp =1
+---------------------
+temps critique = 6.145s
+lut = 35
+n=8
+---------------------
+temps critique = 6.968s
+lut = 31 ou 32
+n=24
+dsp 1
+---------------------
+temps critique = 4.871s
+lut = 15
+n=32
+dsp 3
+---------------------
+temps critique = 8.394
+lut = 31
+n=64
+dsp 10
+

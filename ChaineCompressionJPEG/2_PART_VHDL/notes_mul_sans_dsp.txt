@@ -1,0 +1,25 @@
+temps critique = 8.394s
+lut = 144 - 133
+n=16
+
+---------------------
+temps critique = 5.322s
+lut = 35
+n=8
+
+---------------------
+temps critique = 14.494s
+lut = 320-303
+n=24
+
+---------------------
+temps critique = 15.757s
+lut = 615
+n=32
+
+---------------------
+temps critique = 8.981
+lut = 2738 - 2580
+n=64
+
+
